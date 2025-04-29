@@ -1,13 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+ import App from './App';
+// import Login from './Register/Login';
+//import Signup from './Register/Signup';
+// import Research from './research/Research';
+import Publication from './research/Publication';
+//import HospitalScheduleChecker from './research/Shedule';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+     <App/> 
+    {/* <Login /> */}
+    {/* <Signup /> */}
+    {/* <Research /> */}
+    {/* <Publication/> */}
+    {/* <HospitalScheduleChecker/> */}
   </React.StrictMode>
 );
 

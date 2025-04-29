@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+body{background: #fff; }
+*{margin-top: 0px; margin-bottom: 0px;}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+Container{margin: auto;  width: 100%;display: block;max-width: 1240px;
+  margin-left: auto; margin-right: auto;padding-left: 20px;padding-right: 20px; height: auto;
+width: outo; position: fixed;}
+
+.editar{ background: #000000; width: 100%; }
+.editar-container{display: flex; padding: 15px; color: #fff; font-size: 20px; text-align: center;
+}
+.editar .email{margin-left:20px; display: flex; width: 100%;}
+.editar ul{ list-style: none;}
+
+
+ 
+
+.heding-container{position: relative; width: 100%; margin-left: auto; margin-right: auto;}
+.heding-container .part1{display: flex; width: 100%;}
+.heding-container .part1 .logo{margin-left: 200px;}
+.heding-container .part1  .journal{margin-top: 30px; margin-left: 170px; text-align: center;
+  font-family: 'KaushanScript', cursive;font-size: 30px; }
+   @font-face {
+    font-family: 'KaushanScript';
+    src: url('./font/Merienda-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
   }
-}
+  .journal h3{font-size: smaller;}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  nav{background: #54595F;margin-left: auto; margin-right: auto;}
+  .nav-list{display: flex; list-style: none; gap: 80px; padding: 15px;margin: 0; 
+    margin-left: 420px;}
+  .nav-list li a {text-decoration: none;color:#fff ; font-weight: 500;font-size: 25px;
+   }
+   .nav-list li a:hover{color: #0274be;}
+   
+   .home-container{width: 100%; padding: 25px 35px;height: 800px;}
+   .home-container .home-c{ display: flex;}
+   .book-image{margin-left: 100px;}
+   .book-image .book{ font-size: 200px; width: 150%;}
+   .home-container .home-c .pragraph{font-size:23px; padding: 5px;  margin-left: 210px; width: 850px;}
+   .home-container .home-c .pragraph p{margin-bottom: 5px;}
+   /* @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-display: fallback;
+    src: url(https://fonts.gstatic.com/s/poppins/v22/pxiEyp8kv8JHgFVrJJnecmNE.woff2) format('woff2');
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  } */
 
-.App-link {
-  color: #61dafb;
-}
+   .ain-content{width: 100%;}
+   .ain-content .ain{margin-left: 150px;}
+   .list{ margin-left: 25px; font-family: Poppins;}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+   .contact-container{width: 100%;background: #F9F9F9; }
+    .contact{width: 100%; height: 130px; padding-top: 40px; }
+    .contact h1{ margin-left: 850px;}
+     
+    .form-contant{display: flex;width: 100%; background: #ffffff; font-size: 20px;}
+    .form-contant .from{margin-left:250px; margin-top: 100px;width: 100%;}
+    .form-contant .address{width: 1000px;margin-left: 200px;margin-top: 100px;}
+    .form-contant .address li{list-style: none;text-decoration: none;margin-top: 40px;}
+    .form-contant .address p{margin-top: 1.75em;}
+    .form-contant .from .input{padding: 15px;width: 500px; border-radius: 5px;font-size: 20px;}
+    .submit{padding: 10px; color: #fff;background: black; margin-left: 410px;width: 120px;
+      border-radius: 5px; font-size: 20px;}
+    .message{font-size: 20px;padding: 15px;width: 500px; border-radius: 5px;height: 100px;}
+    
+    .social-container{width: 100%; background: #7A7A7A;margin-bottom: 0;box-sizing: inherit;margin-bottom: 0px;}
+    .content{ font-size: 25px;color: #fff;display: flex;margin-left: 130px;padding: 20px;
+     }
+    .about .about-pragraph{width: 280px;padding-top: 10px;}
+    .content li{list-style: none;font-size: medium;padding: 10px;}
+    .content p{font-size: medium;margin-bottom: 1.99em;}
+    .content .social-midia{margin-left: 160px;}
+    .content h3{font-size: 25px;margin-top: 30px;}
+    .social-midia .about-pragraph{margin-top: 10px;}
+    .divider{color: #fff;}
+    .divide-end h3{ color: #fff;padding: 20px; margin-left: 500px;}
+    
+
+    .faq-container{width: 100%;}
+    .faq-container .faq{margin-left: 120px;}
+
+    .archive-container{width: 100%;}
+    .archive-container .archive{margin-left: 120px;}
+
+    .editorial-container{width: 100%;}
+    .editorial-container .editor{margin-left: 120px;}
