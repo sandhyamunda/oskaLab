@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Box } from '@mui/material';
 import book from '../asset/book.jpg'
-
+import React from 'react';
 function Home(){
     return(
         <Box className="home-container">

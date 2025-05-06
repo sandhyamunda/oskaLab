@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import HouseIcon from '@mui/icons-material/House';
 import {
   Box,
@@ -11,7 +11,17 @@ import {
 } from '@mui/material';
 
 
+
 function Signup(){
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [conformpassword, setConformPassword] = useState('');
+  const handelSignup = (e) => {
+    e.preventDefault();
+  }
+  
+  //console.log('Signup Data:', { name, email, password,conformpassword });
     return(
         <Box>
         <Box justifyContent="space-between" ml={30} pt={5} width={800}>
@@ -26,21 +36,25 @@ function Signup(){
         <Typography variant="h5" gutterBottom textAlign="center">
           Register
         </Typography>
-        <Box component="form">
+        <Box component="form" onSubmit={handelSignup}>
           <TextField
             fullWidth
             margin="normal"
             variant="outlined"
-            label="Username or email"
+            label="Username "
             required
+            value={name}
+            onChange={(e) => setName(e.target.value)}
           />
           <TextField
             fullWidth
             margin="normal"
             variant="outlined"
-            type="mail"
-            label="mail@example.com"
+            type="email"
+            label="Email"
             required
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
           />
           <TextField
             fullWidth
@@ -49,6 +63,8 @@ function Signup(){
             type="password"
             label="Password"
             required
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
           />
           <TextField
             fullWidth
@@ -56,15 +72,18 @@ function Signup(){
             variant="outlined"
             type="password"
             label="Repeat password"
-            required
+            required 
+            value={conformpassword}
+            onChange={(e) => setConformPassword(e.target.value)}
           />
          
-          <Button type="submit" variant="contained" fullWidth>
-            Submit
+          <Button type="signup" variant="contained" fullWidth
+          >
+            Signup
           </Button>
             <Typography variant="body2"  textAlign="center" mt={2}>
              Already have an account?{' '}
-            <Link href="/register" underline="hover">
+            <Link  underline="hover" >
                 Login
             </Link>
             </Typography>
